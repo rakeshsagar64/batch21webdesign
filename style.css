@@ -1,0 +1,23 @@
+#navigation img{
+ 
+ width:10%;
+ }
+
+#center img{
+  
+ width:100%;
+  
+}
+
+
+
+
+#navigation li a{
+  margin:2rem;
+  color:red;
+  font-size:1.7rem;
+  border-bottom:3px solid red;
+  box-shadow: 3px 3px 3px 3px grey;  
+}
+
+

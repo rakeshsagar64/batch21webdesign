@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+	<title>mobile site</title>
+<link rel="stylesheet" href="stylem.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Tammudu" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
+
+
+<script>
+	$(document).ready(function(){
+		let flag=0;
+		$("#hide").click(function(){
+			if(flag==0){
+			$("#location").removeClass("rollOut").addClass("rollIn");
+				flag=1;
+				$("#hide").text("Show");
+			}
+			else{
+			$("#location").removeClass("rollIn").addClass("rollOut");
+				flag=0;
+				$("#hide").text("Hide");
+			}
+
+		});
+
+
+	});
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</head>
+<body id="body">
+	<div class="navbar " id="navigation">
+		<img src="images/logo.jpg" alt="logo image">
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact Us</a></li>
+			<li><a href="#">Feedback</a></li>
+			<li><a href="#" id="hide">Hide </a></li>
+		</ul>
+	</div>
+
+
+<br>
+<br>
+<br>
+
+	<div class="col-md-offset-4 col-md-4 animated col-xs-12 " id="location">
+		<h2>We are the best</h2>
+
+	</div>
+
+
+</body>
+</html>
